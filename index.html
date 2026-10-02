@@ -789,7 +789,12 @@ body{background:linear-gradient(180deg,#b4d3e9 0%,#cae3f4 40%,#e3f2fd 70%,#e2f5d
        <img src="https://play-lh.googleusercontent.com/bncoMFDCd2t_MPM1RqkCWemVcUVtbRWIL_frA_b4K9oa_K7jrTe5j5VhK4EW8RVhzP8j=w240-h480-rw" class=" splash-btn-diia-img " aria-hidden="true" alt="Дія"> 
     </div>
     <div class="splash-btn splash-btn-tryzub img">
-      <img src="https://cdn.phototourl.com/free/2026-06-03-888d67bc-c625-477e-b8b9-dd3698cd5547.png" alt="Герб">
+      <svg width="38" height="46" viewBox="0 0 38 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M19 2C19 2 10 10 10 19C10 24 13 27.5 19 29C25 27.5 28 24 28 19C28 10 19 2 19 2Z" stroke="#333" stroke-width="2" fill="none"/>
+  <path d="M19 29L15 44H23L19 29Z" stroke="#333" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <path d="M19 29L5 36L7 44L19 29Z" stroke="#333" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <path d="M19 29L33 36L31 44L19 29Z" stroke="#333" stroke-width="2" fill="none" stroke-linejoin="round"/>
+</svg>
     </div>
   </div>
  
@@ -1926,7 +1931,7 @@ function fiForeign(){
   fPersonBlock(true) + fSexNat()
     + fCard(fBiRow('Номер документа:','Document No.', '<span style="font-size:18px;font-weight:600;">' + USER.foreignPassNum + '</span>', USER.foreignPassNum)
       + '<div class="fi-two-col-row">'
-      + '<div class="fi-col">' + fBiRow('Дата видачі:','Date of issue', USER.passportIssue) + '</div><div class="fi-col">' + fBiRow('Дійсний до:','Date of expiry', USER.passportExpiry) + '</div></div>' + fBiRow('Орган, що видав:','Authority', USER.passportAuth))
+     + '<div class="fi-col">' + fBiRow('Дата видачі:','Date of issue', USER.foreignIssue) + '</div><div class="fi-col">' + fBiRow('Дійсний до:','Date of expiry', USER.foreignExpiry) + '</div></div>' + fBiRow('Орган, що видав:','Authority', USER.passportAuth))
     + fCard(fBiRow('РНОКПП (ІПН):','Individual Tax Number', '<span style="font-size:18px;font-weight:600;">' + USER.rnokpp + '</span>', USER.rnokpp) + '<div class="fi-status-sub">Verified by State Tax Service on ' + USER.taxVerifiedDate + '</div>')
     + fCard(fBiRow('Запис № (УНЗР):','Record No.', '<span style="font-size:18px;font-weight:600;">' + USER.unzr + '</span>', USER.unzr) + fBiRow('Місце народження:','Place of birth', USER.placeOfBirth) + fBiRow('Місце проживання:','Legal address', USER.address) + fBiRow('Дата реєстрації:','Registered on', USER.addressReg));
 }
